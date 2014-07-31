@@ -1,0 +1,20 @@
+apply plugin: "java"
+apply plugin: "eclipse"
+
+group = "sample"
+sourceCompatibility = 1.8
+version = '1.0'
+jar {
+    manifest {
+        attributes 'RandomStringUtility': 'Gradle Quickstart', 'Implementation-Version': version
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.9'
+}
+
